@@ -1,0 +1,13 @@
+.container {
+  @include container(1200px);
+  padding: 0 2em;
+}
+
+main {
+  @include vertical-padding;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

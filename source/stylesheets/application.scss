@@ -1,0 +1,23 @@
+@import "compass";
+@import "susy";
+@import "normalize";
+@import "media-queries";
+@import "variables";
+@import "mixins";
+@import "layout";
+@import "typography";
+@import "forms";
+@import "header";
+@import "footer";
+@import "navigation";
+@import "buttons";
+@import "print";
+
+
+// Initalise Susy grid system
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  global-box-sizing: border-box,
+  flow: ltr,
+);

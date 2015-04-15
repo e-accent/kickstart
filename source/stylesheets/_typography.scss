@@ -1,0 +1,154 @@
+body {
+  line-height: $line-height;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Paragraph text
+p {
+  margin: 0 0 1em 0;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+  padding-top: 1em;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+  padding-top: 1em;
+}
+
+h4 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+// Lists
+ul,
+ol {
+  padding: 0 0 1em 1em;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  line-height: $line-height;
+}
+
+// Emphasis and miscellaneous
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+// Abbreviations and acronyms
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted gray;
+}
+
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 $line-height;
+  border-left: 5px solid gray;
+  p {
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  small {
+    display: block;
+    line-height: $line-height;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+  // Float right with text-align: right
+  &.pull-right {
+    float: right;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid gray;
+    border-left: 0;
+    p, small {
+      text-align: right;
+    }
+    small {
+      &:before {
+        content: '';
+      }
+      &:after {
+        content: '\00A0 \2014';
+      }
+    }
+  }
+}
+
+// Quotes
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+// Addresses
+address {
+  display: block;
+  margin-bottom: 1em;
+  font-style: normal;
+  line-height: $line-height;
+}

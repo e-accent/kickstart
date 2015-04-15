@@ -1,0 +1,19 @@
+label {
+  display: block;
+  clear: both;
+  margin-bottom: 0.3em;
+}
+
+input {
+  display: block;
+  clear: both;
+  padding: 0.6em 0.8em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid gray;
+  &:focus {
+    outline: none;
+    border: 2px solid black;
+  }
+}
