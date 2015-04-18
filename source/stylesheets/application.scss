@@ -1,22 +1,22 @@
+// Vendor
 @import "susy";
 @import "normalize";
-@import "media-queries";
+
+// Base
 @import "variables";
 @import "mixins";
+@import "media-queries";
+@import "utilities";
 @import "layout";
-@import "typography";
-@import "forms";
-@import "header";
-@import "footer";
-@import "navigation";
-@import "buttons";
 @import "print";
 
+// Elements
+@import "typography";
+@import "forms";
+@import "tables";
+@import "buttons";
 
-// Initalise Susy grid system
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-  global-box-sizing: border-box,
-  flow: ltr,
-);
+// Modules
+@import "module-header";
+@import "module-footer";
+@import "module-navigation";
