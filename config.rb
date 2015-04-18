@@ -1,5 +1,6 @@
 activate :livereload
 activate :autoprefixer
+require 'susy'
 
 ###
 # Compass
