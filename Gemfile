@@ -14,3 +14,6 @@ gem "middleman-livereload", "~> 3.1.0"
 # gem 'sass-rails', '~> 4.0.3'
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'susy'
+
+# Font Awesome
+gem 'font-awesome-middleman'
