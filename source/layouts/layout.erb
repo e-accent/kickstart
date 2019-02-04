@@ -10,13 +10,13 @@
     <title><%= current_page.data.title %></title>
 
     <%= partial "partials/favicons" %>
-    <%= stylesheet_link_tag "application" %>
+    <%= stylesheet_link_tag :application %>
     <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
     <%= javascript_include_tag  "all" %>
 
   </head>
   
-  <body class="<%= page_classes %>">
+  <body>
    
     <%= partial "partials/header" %>
     
