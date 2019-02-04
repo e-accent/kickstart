@@ -1,26 +1,21 @@
 <!doctype html>
+<html lang="en">
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title %></title>
-
     <%= partial "partials/favicons" %>
     <%= stylesheet_link_tag :application %>
-    <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
     <%= javascript_include_tag  "all" %>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   </head>
   
   <body>
    
     <%= partial "partials/header" %>
     
-    <main role="main">
+    <main class="content-area" role="main">
       <div class="container">
         <%= yield %>
       </div>

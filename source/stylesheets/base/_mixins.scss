@@ -9,3 +9,7 @@
 @mixin rounded {
   border-radius: 5px;
 }
+
+@mixin round {
+  border-radius: 10rem;
+}
