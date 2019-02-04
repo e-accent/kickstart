@@ -1,6 +1,5 @@
 activate :livereload
 activate :autoprefixer
-require 'susy'
 
 set :relative_links, true
 

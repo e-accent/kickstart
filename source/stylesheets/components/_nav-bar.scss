@@ -1,0 +1,26 @@
+.nav-bar {
+  display: flex;
+  align-items: baseline;
+  padding: $gutter;
+}
+
+.nav-bar__logo {
+  font-weight: bold;
+}
+
+.nav-bar__navigation {
+  margin-left: auto;
+  ol {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    list-style-type: none;
+    @include breakpoint(medium) {
+      margin-left: 1rem;
+    }
+  }
+}
